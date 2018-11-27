@@ -3,6 +3,7 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
+<<<<<<< HEAD
 
   <head>
 
@@ -36,6 +37,12 @@
 		                border-radius: 3px !important;
 		                border-color: rgba(83, 88, 88, 0.15);
 		            }
+								h2 {
+							 text-align: center;
+							 text-decoration: underline;
+							 text-decoration-color: rgb(223, 28, 28);
+							 text-emphasis-color: rgb(216, 214, 214);
+					 }
 		        </style>
 
 		    <meta name="description">
@@ -99,6 +106,13 @@
 		           // ignored
 		         }
 		       })();</script>
+
+
+
+
+
+
+
 
   </head>
 
@@ -587,6 +601,91 @@
         </div>
         </div>
     </form></center>
-</body>
-</html>
+
 >>>>>>> origin/news
+=======
+
+
+        <div class="container-fluid">
+        <div class="row">
+
+                <h2><div style="font-family: 'Kanit', sans-serif;">สถิติจำนวนนักศึกษามหาวิทยาลัยแม่โจ้ปัจจุบัน(แยกตามคณะ)</div></h2>
+
+
+                <div class="col-sm-4" > </div>
+
+                <div class="col-md-4" style="background-color:rgb(218, 180, 240);">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.js"></script>
+
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["ผลิตกรรมการเกษตร", "ธุรกิจการเกษตร", "วิศวกรรมและอุตสาหกรรมเกษตร","วิทยาศาสตร์", "วิทยาลัยบริหารศาสตร์", "บริหารธุรกิจ"
+                ,"มหาวิทยาลัยแม่โจ้-ชุมพร", "มหาวิทยาลัยแม่โจ้ - แพร่ เฉลิมพระเกียรติ", "พัฒนาการท่องเที่ยว", "เทคโนโลยีการประมงและทรัพยากรทางน้ำ",
+                "เศรษฐศาสตร์", "ศิลปศาสตร์", "วิทยาลัยพลังงานทดแทน", "สารสนเทศและการสื่อสาร", "สถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม", "สัตวศาสตร์และเทคโนโลยี"],
+                datasets: [{
+                    label: '# Number of students',
+                    data: [2475, 1, 854, 1362, 1025, 3477, 467, 1466, 681, 644, 1147, 599, 441, 302, 466, 714],
+                    backgroundColor: [
+                        '#fffc61',
+                        '#f6cd04',
+                        '#911d20',
+                        '#ff9a38',
+                        '#2aa737',
+                        '#9ff4ef',
+                        '#1dcad7',
+                        '#91bbca',
+                        '#c17a1f',
+                        '#180689',
+                        '#7064b9',
+                        '#f66af3',
+                        '#316510',
+                        '#fa0029',
+                        '#ac6a2f',
+                        '#570f12'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+    </div>
+    <div class="col-sm-4" > </div>
+
+</div>
+</div>
+
+  </body>
+</html>
+>>>>>>> graph
