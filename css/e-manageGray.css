@@ -1,0 +1,33 @@
+body {
+    /*-webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    background: #e5e6e6;*/
+}
+
+.nest-logo {
+    position: fixed;
+    z-index: 9999;
+    width: 35px;
+}
+
+@media only all and (min-width: 768px) {
+    .nest-logo {
+        width: auto;
+    }
+}
+
+.nest-left {
+    left: 0;
+}
+
+.nest-right {
+    right: 0;
+}
+
+.nest-top {
+    top: 0;
+}
+
+.nest-bottom {
+    bottom: 0;
+}
